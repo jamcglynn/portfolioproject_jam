@@ -58,7 +58,7 @@ ROOT_URLCONF = 'thanksgiving_recipes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates/'], #do i need this get rid of what's in brackets if not
+        'DIRS': [], #do i need this get rid of what's in brackets if not
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -94,6 +94,19 @@ DATABASES = {
         'PORT': config('DB_PORT'),
     }
 }
+"""
+DATABASE = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': config('thanksgiving_recipes_db'),
+        'USER': config('postgres'),
+        'PASSWORD': config('admin123'),
+        'HOST': config('pg'),
+        'PORT': config('5432'),
+    }
+}"""
+
+
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
