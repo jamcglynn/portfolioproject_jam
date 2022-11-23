@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-xvt&z8er1++x!1d5(=lr&7u)k6n$2^&i1hh9h7(21&8(zjt#0&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'thanksgiving_recipes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [], #do i need this get rid of what's in brackets if not
+        'DIRS': ['templates/'], #do i need this get rid of what's in brackets if not
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
